@@ -1,0 +1,178 @@
+[
+    {
+        "reverseTime": "45",
+        "id": "1",
+        "name": "",
+        "massif": "Barnova",
+        "description": "",
+        "sign": "blue dot",
+        "points": "[1, 2]",
+        "tracks": "",
+        "time": "45"
+    },
+    {
+        "reverseTime": "",
+        "id": "2",
+        "name": "",
+        "massif": "",
+        "description": "",
+        "sign": "red dot",
+        "points": "[2, 3]",
+        "tracks": "",
+        "time": "45"
+    },
+    {
+        "reverseTime": "",
+        "id": "3",
+        "name": "",
+        "massif": "",
+        "description": "",
+        "sign": "red triangle",
+        "points": "[3, 1]",
+        "tracks": "",
+        "time": "60"
+    },
+    {
+        "reverseTime": "30",
+        "id": "4",
+        "name": "",
+        "massif": "",
+        "description": "",
+        "sign": "red stripe",
+        "points": "[14, 1]",
+        "tracks": "",
+        "time": "45"
+    },
+    {
+        "reverseTime": "",
+        "id": "5",
+        "name": "",
+        "massif": "",
+        "description": "",
+        "sign": "red triangle",
+        "points": "[1, 3, 5, 9]",
+        "tracks": "",
+        "time": "180"
+    },
+    {
+        "reverseTime": "",
+        "id": "6",
+        "name": "",
+        "massif": "",
+        "description": "",
+        "sign": "red cross",
+        "points": "[7, 8]",
+        "tracks": "",
+        "time": "240"
+    },
+    {
+        "reverseTime": "",
+        "id": "7",
+        "name": "",
+        "massif": "",
+        "description": "",
+        "sign": "red triangle",
+        "points": "[8, 6]",
+        "tracks": "",
+        "time": "180"
+    },
+    {
+        "reverseTime": "50",
+        "id": "8",
+        "name": "",
+        "massif": "",
+        "description": "",
+        "sign": "red stripe",
+        "points": "[6 , 4, 1]",
+        "tracks": "",
+        "time": "60"
+    },
+    {
+        "reverseTime": "60",
+        "id": "9",
+        "name": "",
+        "massif": "",
+        "description": "",
+        "sign": "red dot",
+        "points": "[6, 7]",
+        "tracks": "",
+        "time": "40"
+    },
+    {
+        "reverseTime": "",
+        "id": "10",
+        "name": "",
+        "massif": "",
+        "description": "",
+        "sign": "blue triangle",
+        "points": "[7, 10]",
+        "tracks": "",
+        "time": "30"
+    },
+    {
+        "reverseTime": "",
+        "id": "11",
+        "name": "",
+        "massif": "",
+        "description": "",
+        "sign": "red stripe",
+        "points": "[14, 1, 4, 6, 11]",
+        "tracks": "",
+        "time": "300"
+    },
+    {
+        "reverseTime": "",
+        "id": "12",
+        "name": "",
+        "massif": "",
+        "description": "",
+        "sign": "blue stripe",
+        "points": "[11, 12, 13]",
+        "tracks": "",
+        "time": "180"
+    },
+    {
+        "reverseTime": "",
+        "id": "13",
+        "name": "",
+        "massif": "",
+        "description": "nemarcat;\ndrum forestier",
+        "sign": "",
+        "points": "[9, 4]",
+        "tracks": "",
+        "time": "180"
+    },
+    {
+        "reverseTime": "",
+        "id": "14",
+        "name": "",
+        "massif": "",
+        "description": "",
+        "sign": "",
+        "points": "",
+        "tracks": "",
+        "time": ""
+    },
+    {
+        "reverseTime": "",
+        "id": "15",
+        "name": "",
+        "massif": "",
+        "description": "",
+        "sign": "",
+        "points": "",
+        "tracks": "",
+        "time": ""
+    },
+    {
+        "reverseTime": "",
+        "id": "16",
+        "name": "",
+        "massif": "",
+        "description": "",
+        "sign": "",
+        "points": "",
+        "tracks": "",
+        "time": ""
+    }
+]
