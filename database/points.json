@@ -1,7 +1,7 @@
 [
     {
-        "car": "1",
-        "id": "1",
+        "car": true,
+        "id": 1,
         "code": "CBARN",
         "name": "Cabana Barnova",
         "nickname": "Cabana Antibiotice",
@@ -9,12 +9,12 @@
         "description": "Cabana privata",
         "countyCode": "IS",
         "countyName": "Iasi",
-        "alitude": "200",
-        "publicTransport": "0"
+        "altitude": 1,
+        "publicTransport": true
     },
     {
-        "car": "",
-        "id": "2",
+        "car": false,
+        "id": 2,
         "code": "PSCHIT",
         "name": "Poiana cu Schit",
         "nickname": "",
@@ -22,12 +22,12 @@
         "description": "Rezervatie floristica",
         "countyCode": "IS",
         "countyName": "Iasi",
-        "alitude": "220",
-        "publicTransport": ""
+        "altitude": 2,
+        "publicTransport": false
     },
     {
-        "car": "",
-        "id": "3",
+        "car": false,
+        "id": 3,
         "code": "PCETATE",
         "name": "Poiana cu Cetate",
         "nickname": "Biserica lui Cujba",
@@ -35,12 +35,12 @@
         "description": "",
         "countyCode": "IS",
         "countyName": "Iasi",
-        "alitude": "190",
-        "publicTransport": ""
+        "altitude": 3,
+        "publicTransport": false
     },
     {
-        "car": "1",
-        "id": "4",
+        "car": true,
+        "id": 4,
         "code": "RADARB",
         "name": "Observatoru Meteo Barnova",
         "nickname": "Radar Barnova",
@@ -48,12 +48,12 @@
         "description": "",
         "countyCode": "IS",
         "countyName": "Iasi",
-        "alitude": "230",
-        "publicTransport": ""
+        "altitude": 4,
+        "publicTransport": false
     },
     {
-        "car": "",
-        "id": "5",
+        "car": false,
+        "id": 5,
         "code": "CANVAMA",
         "name": "Cantonul Palanca",
         "nickname": "",
@@ -61,12 +61,12 @@
         "description": "",
         "countyCode": "IS",
         "countyName": "Iasi",
-        "alitude": "",
-        "publicTransport": ""
+        "altitude": 5,
+        "publicTransport": false
     },
     {
-        "car": "",
-        "id": "6",
+        "car": false,
+        "id": 6,
         "code": "VFROTU",
         "name": "Varful Rotunda",
         "nickname": "",
@@ -74,12 +74,12 @@
         "description": "",
         "countyCode": "IS",
         "countyName": "Iasi",
-        "alitude": "",
-        "publicTransport": ""
+        "altitude": 6,
+        "publicTransport": false
     },
     {
-        "car": "",
-        "id": "7",
+        "car": false,
+        "id": 7,
         "code": "MNSBARN",
         "name": "Manastirea Barnova",
         "nickname": "",
@@ -87,12 +87,12 @@
         "description": "",
         "countyCode": "IS",
         "countyName": "Iasi",
-        "alitude": "",
-        "publicTransport": "1"
+        "altitude": 7,
+        "publicTransport": true
     },
     {
-        "car": "",
-        "id": "8",
+        "car": false,
+        "id": 8,
         "code": "CANVPER",
         "name": "Canton Vama Perjului",
         "nickname": "",
@@ -100,12 +100,12 @@
         "description": "",
         "countyCode": "IS",
         "countyName": "Iasi",
-        "alitude": "",
-        "publicTransport": ""
+        "altitude": 8,
+        "publicTransport": false
     },
     {
-        "car": "1",
-        "id": "9",
+        "car": true,
+        "id": 9,
         "code": "MNSDOB",
         "name": "Manastirea Dobrovat",
         "nickname": "",
@@ -113,12 +113,12 @@
         "description": "",
         "countyCode": "IS",
         "countyName": "Iasi",
-        "alitude": "",
-        "publicTransport": "1"
+        "altitude": 9,
+        "publicTransport": true
     },
     {
-        "car": "",
-        "id": "10",
+        "car": false,
+        "id": 10,
         "code": "SCHTAR",
         "name": "Schit Tarita",
         "nickname": "",
@@ -126,12 +126,12 @@
         "description": "",
         "countyCode": "IS",
         "countyName": "Iasi",
-        "alitude": "",
-        "publicTransport": ""
+        "altitude": 10,
+        "publicTransport": false
     },
     {
-        "car": "1",
-        "id": "11",
+        "car": true,
+        "id": 11,
         "code": "REZREP",
         "name": "Dealul Repedea",
         "nickname": "Rezervatia Fosilifera\n Dealul Repedea",
@@ -139,12 +139,12 @@
         "description": "",
         "countyCode": "IS",
         "countyName": "Iasi",
-        "alitude": "",
-        "publicTransport": ""
+        "altitude": 11,
+        "publicTransport": false
     },
     {
-        "car": "",
-        "id": "12",
+        "car": false,
+        "id": 12,
         "code": "POIMIE",
         "name": "Poiana Mielor",
         "nickname": "",
@@ -152,12 +152,12 @@
         "description": "",
         "countyCode": "IS",
         "countyName": "Iasi",
-        "alitude": "",
-        "publicTransport": ""
+        "altitude": 12,
+        "publicTransport": false
     },
     {
-        "car": "",
-        "id": "13",
+        "car": false,
+        "id": 13,
         "code": "CANPOI",
         "name": "Canton Poieni",
         "nickname": "",
@@ -165,12 +165,12 @@
         "description": "",
         "countyCode": "IS",
         "countyName": "Iasi",
-        "alitude": "",
-        "publicTransport": ""
+        "altitude": 13,
+        "publicTransport": false
     },
     {
-        "car": "1",
-        "id": "14",
+        "car": true,
+        "id": 14,
         "code": "GARBAR",
         "name": "Gara Barnova",
         "nickname": "",
@@ -178,72 +178,7 @@
         "description": "",
         "countyCode": "IS",
         "countyName": "Iasi",
-        "alitude": "",
-        "publicTransport": "1"
-    },
-    {
-        "car": "",
-        "id": "",
-        "code": "",
-        "name": "",
-        "nickname": "",
-        "massif": "",
-        "description": "",
-        "countyCode": "",
-        "countyName": "",
-        "alitude": "",
-        "publicTransport": ""
-    },
-    {
-        "car": "",
-        "id": "",
-        "code": "",
-        "name": "",
-        "nickname": "",
-        "massif": "",
-        "description": "",
-        "countyCode": "",
-        "countyName": "",
-        "alitude": "",
-        "publicTransport": ""
-    },
-    {
-        "car": "",
-        "id": "",
-        "code": "",
-        "name": "",
-        "nickname": "",
-        "massif": "",
-        "description": "",
-        "countyCode": "",
-        "countyName": "",
-        "alitude": "",
-        "publicTransport": ""
-    },
-    {
-        "car": "",
-        "id": "",
-        "code": "",
-        "name": "",
-        "nickname": "",
-        "massif": "",
-        "description": "",
-        "countyCode": "",
-        "countyName": "",
-        "alitude": "",
-        "publicTransport": ""
-    },
-    {
-        "car": "",
-        "id": "",
-        "code": "",
-        "name": "[14, 1, 4, 6, 11]",
-        "nickname": "",
-        "massif": "",
-        "description": "",
-        "countyCode": "",
-        "countyName": "",
-        "alitude": "",
-        "publicTransport": ""
+        "altitude": 14,
+        "publicTransport": true
     }
 ]
