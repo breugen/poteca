@@ -2,12 +2,24 @@
 
 <GridLayout columns="*, *" rows="*, *, *, *">
     <Label text="1 Zi" class="h2 text-center" row="0" col="0"></Label>
-    <Button text="Usor" row="1" col="0"></Button>
-    <Button text="Mediu" row="2" col="0"></Button>
-    <Button text="Intens"  row="3" col="0"></Button>
+    <Button text="Usor" row="1" col="0" 
+        [nsRouterLink]="['/trails', 'easy']">
+    </Button>
+    <Button text="Mediu" row="2" col="0"
+        [nsRouterLink]="['/trails', 'medium']">
+    </Button>
+    <Button text="Intens" row="3" col="0"
+        [nsRouterLink]="['/trails', 'intense']">
+    </Button>
 
     <Label text="Weekend" class="h2 text-center" row="0" col="1"></Label>
-    <Button text="Cort" row="1" col="1"></Button>
-    <Button text="Cabana" row="2" col="1"></Button>
-    <Button text="Hotel" row="3" col="1"></Button>
+    <Button text="Cort" row="1" col="1"
+        [nsRouterLink]="['/trails', 'tent']">
+    </Button>
+    <Button text="Cabana" row="2" col="1"
+        [nsRouterLink]="['/trails', 'cabin']">
+    </Button>
+    <Button text="Hotel" row="3" col="1"
+        [nsRouterLink]="['/trails', 'hotel']">
+    </Button>
 </GridLayout>

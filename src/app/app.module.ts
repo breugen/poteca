@@ -6,6 +6,7 @@ import { AppComponent } from "./app.component";
 import { ItemsComponent } from "./item/items.component";
 import { ItemDetailComponent } from "./item/item-detail.component";
 import { HomeComponent } from "./home/home.component";
+import { TrailsComponent } from "./trails/trails.component";
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
@@ -24,6 +25,7 @@ import { HomeComponent } from "./home/home.component";
     declarations: [
         AppComponent,
         HomeComponent,
+        TrailsComponent,
         ItemsComponent,
         ItemDetailComponent
     ],
