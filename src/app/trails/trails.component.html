@@ -2,5 +2,13 @@
 <FlexboxLayout flexDirection="column" class="page">
     <FlexboxLayout class="m-15">
         <Label class="h2" [text]="type"></Label>
+
+        <ListView [trails]="trails" class="list-group">
+                <ng-template let-trail="trail">
+                    <Label [text]="trail.id"
+                        class="list-group-item"></Label>
+                </ng-template>
+        </ListView>
+
     </FlexboxLayout>
 </FlexboxLayout>

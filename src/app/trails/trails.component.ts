@@ -1,5 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
+import { TrailsService } from "./trails.service";
+import { Trail } from "./trail";
 
 @Component({
     selector: "ns-details",
@@ -8,15 +10,16 @@ import { ActivatedRoute } from "@angular/router";
 })
 export class TrailsComponent implements OnInit {
     type: String;
+    trails: Trail[];
 
     constructor(
-        // private itemService: ItemService,
+        private trailsService: TrailsService,
         private route: ActivatedRoute
     ) { }
 
     ngOnInit(): void {
         const type = this.route.snapshot.params.type;
-        console.log('type is ' , type);
         this.type = type;
+        this.trails = this.trailsService.getAllTrails();
     }
 }
