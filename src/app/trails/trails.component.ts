@@ -4,7 +4,7 @@ import { TrailsService } from "./trails.service";
 import { Trail } from "./trail";
 
 @Component({
-    selector: "ns-details",
+    selector: "ns-trails",
     moduleId: module.id,
     templateUrl: "./trails.component.html"
 })
