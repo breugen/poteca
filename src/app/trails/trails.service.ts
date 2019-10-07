@@ -1,4 +1,4 @@
-import { Injectable, OnInit } from "@angular/core";
+import { Injectable } from "@angular/core";
 
 import { Trail } from "./trail";
 import { Point } from "./point";
@@ -12,17 +12,22 @@ const rawTrails = require('../database/trails.json');
 export class TrailsService {
 
     trails: Array<Trail> = rawTrails.map(rawTrail => {
-        const trailPoints: Point[] = rawTrail.points.map((pointId) => {
+        // populate the collection of points based on ids
+        const trailPoints: Point[] = rawTrail.points.map((pointId: number) => {
             return this.getPoint(pointId);
         });
         const jsonTrail: any = rawTrail;
         jsonTrail.points = trailPoints;
         const trail: Trail = <Trail>jsonTrail;
         return trail;
+    }).filter((trail: Trail) => {
+        // eliminate invalid trails that should not have been added to the DB
+        // in the first place, ex: trails with less then 2 points
+        return Array.isArray(trail.points) && (trail.points.length > 1);
     });
 
     getPoint(id: number): Point {
-        return rawPoints.find(point => point.id === id);
+        return rawPoints.find((point: Point) => point.id === id);
     }
 
     getAllTrails(): Array<Trail> {

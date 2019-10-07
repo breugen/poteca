@@ -1,15 +1,24 @@
 <ActionBar title="Trails" class="action-bar"></ActionBar>
 <GridLayout class="page">
-        <!-- <Label class="h2" [text]="type"></Label> -->
-        <ListView [items]="trails" class="list-group">
-                <ng-template let-trail="item">
-                        <!-- The item template can only have a single root view container (e.g. GridLayout, StackLayout, etc.)-->
-                        <GridLayout columns="2*, *, *, *" >
-                                <Label [text]="trail.id" col="0" row="0" class="list-group-item"></Label>
-                                <Label [text]="trail.time" col="1" row="0" class="list-group-item"></Label>
-                                <Label [text]="trail.id" col="2" row="0" class="list-group-item"></Label>
+        <RadListView [items]="trails" tkExampleTitle tkToggleNavButton>
+                <ng-template tkListItemTemplate let-trail="item">
+                        <GridLayout columns="2*, *, *, *">
+                                <Label [text]="trail | trailTitle" col="0" row="0" class="list-group-item"></Label>
+                                <Label [text]="trail.id" col="1" row="0" class="list-group-item"></Label>
+                                <Label [text]="trail.time" col="2" row="0" class="list-group-item"></Label>
                                 <Label [text]="trail.time" col="3" row="0" class="list-group-item"></Label>
-                        </GridLayout>     
-                </ng-template> 
-        </ListView>
+                        </GridLayout>
+                </ng-template>
+                <ng-template tkListViewHeader>
+                        <GridLayout columns="2*, *, *, *">
+                                <Label text="Traseu" col="0" row="0" class="list-group-item"></Label>
+                                <Label text="Durata" col="1" row="0" class="list-group-item"></Label>
+                                <Label text="Masiv" col="2" row="0" class="list-group-item"></Label>
+                                <Label text="Judet" col="3" row="0" class="list-group-item"></Label>
+                        </GridLayout>
+                </ng-template>
+                <ng-template tkListViewFooter>
+                        <Label text="This is list footer with height 50" height="50" class="footer"></Label>
+                </ng-template>
+        </RadListView>
 </GridLayout>

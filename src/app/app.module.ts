@@ -3,10 +3,14 @@ import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
+
+import { NativeScriptUIListViewModule } from "nativescript-ui-listview/angular";
+
 import { ItemsComponent } from "./item/items.component";
 import { ItemDetailComponent } from "./item/item-detail.component";
 import { HomeComponent } from "./home/home.component";
 import { TrailsComponent } from "./trails/trails.component";
+import { TrailTitlePipe } from "./trails/trail-title.pipe";
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
@@ -20,14 +24,16 @@ import { TrailsComponent } from "./trails/trails.component";
     ],
     imports: [
         NativeScriptModule,
-        AppRoutingModule
+        AppRoutingModule,
+        NativeScriptUIListViewModule
     ],
     declarations: [
         AppComponent,
         HomeComponent,
         TrailsComponent,
         ItemsComponent,
-        ItemDetailComponent
+        ItemDetailComponent,
+        TrailTitlePipe
     ],
     providers: [],
     schemas: [

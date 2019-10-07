@@ -2,6 +2,7 @@ import { Point } from "./point";
 
 export interface Trail {
     id: number;
+    //name is optional, and set by mountaineers
     name?: string;
     massif?: string,
     description?: string,
