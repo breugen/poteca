@@ -24,7 +24,7 @@ export class SearchComponent implements OnInit {
     }
 
     changeCheckedRadio(city) {
-        console.log('city ' ,city, ' toggled');
+        city.included = !city.included;
     }
 }
 

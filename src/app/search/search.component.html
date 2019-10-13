@@ -1,11 +1,9 @@
 <StackLayout>
-    <Label class="p-10" text="Alegeti orasele / regiunile in apropierea carora doriti sa cautati"
+    <Label class="p-10" text="Alege orasele / regiunile in apropierea carora doriti sa cautati"
         textWrap="true"></Label>
     <StackLayout class="p-10" *ngFor="let city of cities">
         <StackLayout orientation="horizontal" verticalAlignment="center">
-            <CheckBox #elem [checked]="city.included"
-                (checkedChange)="elem.checked !== city.included && changeCheckedRadio(city)" class="checkbox"
-                boxType="circle"></CheckBox>
+            <CheckBox [(ngModel)]="city.included" class="checkbox" boxType="square"></CheckBox>
             <StackLayout verticalAlignment="center">
                 <Label [text]="city.name" textWrap="true" (tap)="changeCheckedRadio(city)"></Label>
             </StackLayout>
