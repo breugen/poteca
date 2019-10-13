@@ -1,13 +1,16 @@
-import { Component, OnInit, ViewChild } from "@angular/core";
+import { Component, OnInit, ViewChild, ViewContainerRef} from "@angular/core";
+import { ModalDialogService, ModalDialogOptions } from "nativescript-angular/modal-dialog";
 import { RadListViewComponent } from "nativescript-ui-listview/angular";
 import { ObservableArray } from "tns-core-modules/data/observable-array";
 import { ActivatedRoute } from "@angular/router";
 import { TrailsService } from "./trails.service";
 import { Trail } from "./trail";
+import { SearchComponent } from "../search/search.component";
 
 @Component({
     selector: "ns-trails",
     moduleId: module.id,
+    providers: [ModalDialogService],
     templateUrl: "./trails.component.html"
 })
 export class TrailsComponent implements OnInit {
@@ -20,7 +23,9 @@ export class TrailsComponent implements OnInit {
 
     constructor(
         private trailsService: TrailsService,
-        private route: ActivatedRoute
+        private route: ActivatedRoute,
+        private modalService: ModalDialogService,
+        private viewContainerRef: ViewContainerRef
     ) { };
 
     ngOnInit(): void {
@@ -51,6 +56,11 @@ export class TrailsComponent implements OnInit {
     }
 
     public showFilterModal() {
-        console.log('opening filer modal');
+        const options: ModalDialogOptions = {
+            viewContainerRef: this.viewContainerRef,
+            fullscreen: false,
+            context: {}
+        };
+        this.modalService.showModal(SearchComponent, options);
     }
 }

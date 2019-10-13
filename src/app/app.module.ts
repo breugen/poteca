@@ -11,6 +11,7 @@ import { ItemDetailComponent } from "./item/item-detail.component";
 import { HomeComponent } from "./home/home.component";
 import { TrailsComponent } from "./trails/trails.component";
 import { TrailTitlePipe } from "./trails/trail-title.pipe";
+import { SearchComponent } from "./search/search.component";
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
@@ -33,7 +34,11 @@ import { TrailTitlePipe } from "./trails/trail-title.pipe";
         TrailsComponent,
         ItemsComponent,
         ItemDetailComponent,
-        TrailTitlePipe
+        TrailTitlePipe,
+        SearchComponent
+    ],
+    entryComponents: [
+        SearchComponent
     ],
     providers: [],
     schemas: [
