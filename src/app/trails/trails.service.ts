@@ -16,7 +16,7 @@ export class TrailsService {
         const trailPoints: Point[] = rawTrail.points.map((pointId: number) => {
             return this.getPoint(pointId);
         });
-        const jsonTrail: any = rawTrail;
+        const jsonTrail: any = Object.assign({}, rawTrail);
         jsonTrail.points = trailPoints;
         const trail: Trail = <Trail>jsonTrail;
         return trail;

@@ -16,6 +16,7 @@ export class TrailTitlePipe implements PipeTransform {
     getTrailTitleFromPoints(trail: Trail): string {
         const trailStartingPoint = trail.points[0];
         const trailEndingPoint = trail.points[trail.points.length - 1];
+
         if (trailStartingPoint.id === trailEndingPoint.id) {
             // just a convention, that can be changed if we find a better way
             return 'Circuit ' + trailStartingPoint.name + ' - ' + 

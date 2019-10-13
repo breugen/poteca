@@ -16,7 +16,7 @@
         "reverseTime": null,
         "id": 2,
         "name": "",
-        "massif": "",
+        "massif": "Barnova",
         "description": "",
         "sign": "red dot",
         "points": [
@@ -29,7 +29,7 @@
         "reverseTime": null,
         "id": 3,
         "name": "",
-        "massif": "",
+        "massif": "Barnova",
         "description": "",
         "sign": "red triangle",
         "points": [
@@ -166,7 +166,7 @@
         "reverseTime": null,
         "id": 13,
         "name": "",
-        "massif": "",
+        "massif": "Schitu Duca",
         "description": "nemarcat;\ndrum forestier",
         "sign": "",
         "points": [

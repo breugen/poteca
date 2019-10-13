@@ -109,10 +109,10 @@
         "code": "MNSDOB",
         "name": "Manastirea Dobrovat",
         "nickname": "",
-        "massif": "Barnova",
+        "massif": "Dobrovat",
         "description": "",
-        "countyCode": "IS",
-        "countyName": "Iasi",
+        "countyCode": "VS",
+        "countyName": "Vaslui",
         "altitude": 9,
         "publicTransport": true
     },
