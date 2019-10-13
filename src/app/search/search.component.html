@@ -1,0 +1,15 @@
+<StackLayout class="p-10">
+
+    <StackLayout class="p-10" *ngFor="let city of cities">
+        <StackLayout orientation="horizontal" verticalAlignment="center">
+            <CheckBox #elem [checked]="city.included"
+                (checkedChange)="elem.checked !== city.included && changeCheckedRadio(city)" class="checkbox"
+                boxType="circle"></CheckBox>
+            <StackLayout verticalAlignment="center">
+                <Label [text]="city.name" textWrap="true" (tap)="changeCheckedRadio(city)"></Label>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+
+    <Button class="btn btn-outline" text="Close Modal" (tap)="close()"></Button>
+</StackLayout>

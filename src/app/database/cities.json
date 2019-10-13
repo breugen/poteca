@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Bucuresti",
+        "included": true
+    },
+    {
+        "name": "Iasi",
+        "included": true
+    },
+    {
+        "name": "Cluj",
+        "included": true
+    },
+    {
+        "name": "Timisoara",
+        "included": true
+    },
+    {
+        "name": "Constanta",
+        "included": true
+    },
+    {
+        "name": "Sibiu",
+        "included": true
+    },
+    {
+        "name": "Brasov",
+        "included": true
+    },
+    {
+        "name": "Oradea",
+        "included": true
+    }
+]

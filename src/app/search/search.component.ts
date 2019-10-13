@@ -1,23 +1,30 @@
 import { Component, OnInit } from "@angular/core";
 import { ModalDialogParams } from "nativescript-angular/modal-dialog";
 
+import { StorageService } from "../database/storage.service";
+
 @Component({
     selector: "modal",
-    template: `
-		<StackLayout class="p-20">
-            <Label class="h2 text-center" text="This is a modal page." textWrap="true"></Label>
-            <Button class="btn btn-outline" text="Close Modal" (tap)="close()"></Button>
-        </StackLayout>
-	`
+    templateUrl: "./search.component.html"
 })
 export class SearchComponent implements OnInit {
+    cities;
 
-    constructor(private params: ModalDialogParams) {}
+    constructor(
+        private params: ModalDialogParams,
+        private storageService: StorageService
+    ) {}
 
-    ngOnInit() {}
+    ngOnInit() {
+        this.cities = this.storageService.getUserCities();
+    }
 
     close() {
         this.params.closeCallback();
+    }
+
+    changeCheckedRadio(city) {
+        console.log('city ' ,city, ' toggled');
     }
 }
 
