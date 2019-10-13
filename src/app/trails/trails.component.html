@@ -1,4 +1,7 @@
-<ActionBar title="Trails" class="action-bar"></ActionBar>
+<ActionBar title="Trails" class="action-bar">
+        <ActionItem (tap)="showFilterModal()" android.systemIcon="ic_menu_search" ios.systemIcon="12" ios.position="right" android.position="actionBar">
+        </ActionItem>
+</ActionBar>
 <GridLayout class="page">
         <!-- RadListView also accepts  [sortingFunction]="sortingFunction". Add it if needed -->
         <RadListView [items]="trails" tkExampleTitle tkToggleNavButton #trailsListView>
@@ -7,14 +10,17 @@
                                 <Label [text]="trail | trailTitle" col="0" row="0" class="list-group-item"></Label>
                                 <Label [text]="trail.time" col="1" row="0" class="list-group-item"></Label>
                                 <Label [text]="trail.massif" col="2" row="0" class="list-group-item"></Label>
-                                <Label [text]="trail.points[0].countyName" col="3" row="0" class="list-group-item"></Label>
+                                <Label [text]="trail.points[0].countyName" col="3" row="0"
+                                        class="list-group-item"></Label>
                         </GridLayout>
                 </ng-template>
                 <ng-template tkListViewHeader>
                         <GridLayout columns="2*, *, *, *">
                                 <Label text="Traseu" col="0" row="0" class="list-group-item"></Label>
-                                <Label text="Durata" col="1" row="0" (tap)="sortTrails('time')" class="list-group-item"></Label>
-                                <Label text="Masiv" col="2" row="0" (tap)="sortTrails('massif')" class="list-group-item"></Label>
+                                <Label text="Durata" col="1" row="0" (tap)="sortTrails('time')"
+                                        class="list-group-item"></Label>
+                                <Label text="Masiv" col="2" row="0" (tap)="sortTrails('massif')"
+                                        class="list-group-item"></Label>
                                 <Label text="Judet" col="3" row="0" class="list-group-item"></Label>
                         </GridLayout>
                 </ng-template>

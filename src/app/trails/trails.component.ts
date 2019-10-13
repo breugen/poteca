@@ -49,4 +49,8 @@ export class TrailsComponent implements OnInit {
             }
         };
     }
+
+    public showFilterModal() {
+        console.log('opening filer modal');
+    }
 }
