@@ -1,5 +1,6 @@
-<StackLayout class="p-10">
-
+<StackLayout>
+    <Label class="p-10" text="Alegeti orasele / regiunile in apropierea carora doriti sa cautati"
+        textWrap="true"></Label>
     <StackLayout class="p-10" *ngFor="let city of cities">
         <StackLayout orientation="horizontal" verticalAlignment="center">
             <CheckBox #elem [checked]="city.included"

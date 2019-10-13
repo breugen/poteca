@@ -5,6 +5,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 
 import { NativeScriptUIListViewModule } from "nativescript-ui-listview/angular";
+import { TNSCheckBoxModule } from '@nstudio/nativescript-checkbox/angular';
 
 import { ItemsComponent } from "./item/items.component";
 import { ItemDetailComponent } from "./item/item-detail.component";
@@ -26,7 +27,8 @@ import { SearchComponent } from "./search/search.component";
     imports: [
         NativeScriptModule,
         AppRoutingModule,
-        NativeScriptUIListViewModule
+        NativeScriptUIListViewModule,
+        TNSCheckBoxModule
     ],
     declarations: [
         AppComponent,
