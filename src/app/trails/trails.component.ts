@@ -59,8 +59,19 @@ export class TrailsComponent implements OnInit {
         const options: ModalDialogOptions = {
             viewContainerRef: this.viewContainerRef,
             fullscreen: false,
-            context: {}
+            context: {
+                
+            }
         };
-        this.modalService.showModal(SearchComponent, options);
+        this.modalService.showModal(SearchComponent, options).then((cities) => {
+            let listView = this.trailsListViewComponent.listView;
+            const includedCities = cities.filter(city => city.included).
+                map(city => city.code);
+                console.log('includedCities ', includedCities);
+            listView.filteringFunction = (trail: Trail) => {
+                console.log('trail.points[0].countyCode ', trail.points[0].countyCode)
+                return includedCities.includes(trail.points[0].countyCode);
+            }
+        });
     }
 }

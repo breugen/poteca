@@ -20,7 +20,8 @@ export class SearchComponent implements OnInit {
     }
 
     close() {
-        this.params.closeCallback();
+        this.storageService.saveUserCities(this.cities);
+        this.params.closeCallback(this.cities);
     }
 
     changeCheckedRadio(city) {

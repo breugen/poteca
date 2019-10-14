@@ -1,34 +1,42 @@
 [
     {
         "name": "Bucuresti",
-        "included": true
+        "included": true,
+        "code": "B"
     },
     {
         "name": "Iasi",
-        "included": true
+        "included": true,
+        "code": "IS"
     },
     {
         "name": "Cluj",
-        "included": true
+        "included": true,
+        "code": "CJ"
     },
     {
         "name": "Timisoara",
-        "included": true
+        "included": true,
+        "code": "TM"
     },
     {
         "name": "Constanta",
-        "included": true
+        "included": true,
+        "code": "CT"
     },
     {
         "name": "Sibiu",
-        "included": true
+        "included": true,
+        "code": "SB"
     },
     {
         "name": "Brasov",
-        "included": true
+        "included": true,
+        "code": "BV"
     },
     {
         "name": "Oradea",
-        "included": true
+        "included": true,
+        "code": "BH"
     }
 ]
