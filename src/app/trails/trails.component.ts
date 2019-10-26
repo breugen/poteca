@@ -67,9 +67,7 @@ export class TrailsComponent implements OnInit {
             let listView = this.trailsListViewComponent.listView;
             const includedCities = cities.filter(city => city.included).
                 map(city => city.code);
-                console.log('includedCities ', includedCities);
             listView.filteringFunction = (trail: Trail) => {
-                console.log('trail.points[0].countyCode ', trail.points[0].countyCode)
                 return includedCities.includes(trail.points[0].countyCode);
             }
         });

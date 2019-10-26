@@ -35,7 +35,6 @@ export class TrailsService {
     }
 
     getTrail(id: number): Trail {
-        console.log(this.trails.find((trail: Trail) => trail.id === id));
         return this.trails.find((trail: Trail) => trail.id === id);
     }
 }
