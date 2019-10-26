@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 
 import { Trail } from "./trail";
-import { Point } from "./point";
+import { Point } from "../trails/point";
 
 const rawPoints = require('../database/points.json');
 const rawTrails = require('../database/trails.json');
@@ -32,5 +32,10 @@ export class TrailsService {
 
     getAllTrails(): Array<Trail> {
         return this.trails;
+    }
+
+    getTrail(id: number): Trail {
+        console.log(this.trails.find((trail: Trail) => trail.id === id));
+        return this.trails.find((trail: Trail) => trail.id === id);
     }
 }

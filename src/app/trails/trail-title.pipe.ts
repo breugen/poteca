@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Trail } from './trail';
+import { Trail } from '../core/trail';
 
 /*
  * the shortest summary of the points on the path to be displayed in the trail list. 

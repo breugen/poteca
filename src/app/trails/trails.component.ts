@@ -3,8 +3,8 @@ import { ModalDialogService, ModalDialogOptions } from "nativescript-angular/mod
 import { RadListViewComponent } from "nativescript-ui-listview/angular";
 import { ObservableArray } from "tns-core-modules/data/observable-array";
 import { ActivatedRoute } from "@angular/router";
-import { TrailsService } from "./trails.service";
-import { Trail } from "./trail";
+import { TrailsService } from "../core/trails.service";
+import { Trail } from "../core/trail";
 import { SearchComponent } from "../search/search.component";
 
 @Component({

@@ -7,7 +7,7 @@
         <RadListView [items]="trails" tkExampleTitle tkToggleNavButton #trailsListView>
                 <ng-template tkListItemTemplate let-trail="item">
                         <GridLayout columns="2*, *, *, *">
-                                <Label [text]="trail | trailTitle" col="0" row="0" class="list-group-item"></Label>
+                                <Label [nsRouterLink]="['/trail', trail.id]" [text]="trail | trailTitle" col="0" row="0" class="list-group-item"></Label>
                                 <Label [text]="trail.time" col="1" row="0" class="list-group-item"></Label>
                                 <Label [text]="trail.massif" col="2" row="0" class="list-group-item"></Label>
                                 <Label [text]="trail.points[0].countyName" col="3" row="0"

@@ -7,6 +7,7 @@ import { Routes } from "@angular/router";
 import { TrailsComponent } from "./trails/trails.component";
 
 import { HomeComponent } from "./home/home.component";
+import { TrailComponent } from "./trail/trail.component";
 
 const routes: Routes = [
     // { path: "", redirectTo: "/items", pathMatch: "full" },
@@ -14,7 +15,8 @@ const routes: Routes = [
     // { path: "item/:id", component: ItemDetailComponent }
     { path: "", redirectTo: "/home", pathMatch: "full" },
     { path: "home", component: HomeComponent },
-    { path: "trails/:type", component: TrailsComponent }
+    { path: "trails/:type", component: TrailsComponent },
+    { path: "trail/:id", component: TrailComponent }
 ];
 
 @NgModule({

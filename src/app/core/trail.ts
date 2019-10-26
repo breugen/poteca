@@ -1,4 +1,4 @@
-import { Point } from "./point";
+import { Point } from "../trails/point";
 
 export interface Trail {
     id: number;
